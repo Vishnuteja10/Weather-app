@@ -13,6 +13,10 @@ In the project directory, you can run:
 
 Install react bootstrap , which is used in the project .
 
+### `npm install axios`
+
+Install axios package for api calls.
+
 
 ### `npm start`
 
