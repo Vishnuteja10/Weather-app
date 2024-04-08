@@ -6,6 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+## LIVE LINK OF PROJECT
+[project live link](https://vishnuteja-weatherapp.netlify.app/)
+
 ### `npm install react-bootstrap bootstrap`
 
 Install react bootstrap , which is used in the project .
