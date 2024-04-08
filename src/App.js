@@ -16,7 +16,6 @@ function App() {
         `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=b1541e5619f8ac25fa684285493a4352`
       )
       .then((res) => {
-        console.log("res is", res);
         const city = res?.data;
         const cityWeatherData = {};
         cityWeatherData.humidity = city?.main?.humidity;
@@ -25,13 +24,10 @@ function App() {
         cityWeatherData.min_temp = city?.main?.temp_min;
         cityWeatherData.max_temp = city?.main?.temp_max;
         cityWeatherData.cityName = cityName;
-        console.log("city weather data :", cityWeatherData);
         setCitiesWeatherData((prevCitiesWeatherData) => [
           ...prevCitiesWeatherData,
           cityWeatherData,
         ]);
-
-        console.log("aeray", citiesWeatherData);
       })
       .catch((err) => {
         console.log("errorr ", err);
